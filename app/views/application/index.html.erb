@@ -1,1 +1,9 @@
 <h1>application#index</h1>
+ <ul>
+    <li>Click to get a
+        <%= link_to "Modal", new_modal_path %>
+    </li>
+    <li>Click to get a modal and redirect to
+        <%= link_to "Navigation Path", new_modal_path(redirect: true) %>
+    </li>
+</ul>
