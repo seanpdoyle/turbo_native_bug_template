@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   get "navigation" => "application#navigation"
 
+  get "modal" => "application#modal"
+
+  resource :modal, only: %i[new show] do
+    collection do
+      get :replace
+    end
+  end
+
   # Defines the root path route ("/")
   root "application#index"
 end
