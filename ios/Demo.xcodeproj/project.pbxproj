@@ -476,7 +476,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hotwired/strada-ios.git";
 			requirement = {
-				branch = main;
+				branch = "skip-visit-proposal";
 				kind = branch;
 			};
 		};

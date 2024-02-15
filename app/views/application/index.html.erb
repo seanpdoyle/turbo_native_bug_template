@@ -1,1 +1,18 @@
+<% content_for :head do %>
+  <style data-turbo-track="dynamic">
+    body {
+      background-color: red;
+      color: white;
+    }
+
+    a:visited {
+      color: white;
+    }
+  </style>
+<% end %>
+
 <h1>application#index</h1>
+
+<a href="/" data-turbo-action="replace">[data-turbo-action="replace"]</a>
+
+<a href="/navigation">application#navigation</a>
